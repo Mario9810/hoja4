@@ -1,3 +1,4 @@
+//LOL
 package tarea.algoritmos.pkg2;
 public class Calculo implements Calculadora {
     public Calculo(){
