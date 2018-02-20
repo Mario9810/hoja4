@@ -1,10 +1,13 @@
 //LOL
 package tarea.algoritmos.pkg2;
+
+import javaapplication8.FactoryStacks;
+
 public class Calculo implements Calculadora {
     public Calculo(){
     }
     public double operar(String expresion){
-        Stack<Double> a = new StackVector();
+        Stack<Double> a = FactoryStacks.GetStack(1,0);
         double num2;
         double num1;
         String s = expresion.replaceAll("\\s","");

@@ -9,6 +9,6 @@ package javaapplication8;
  *
  * @author ledod
  */
-public class ListaDoble {
+public class ListaDoble extends Lista {
     
 }

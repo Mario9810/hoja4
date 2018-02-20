@@ -5,10 +5,22 @@
  */
 package javaapplication8;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ledod
  */
-public abstract class Lista {
+public abstract class Lista<E> implements Stack{
+    protected int count;
+    
+   
+   public boolean empty(){
+        return (size()==0);
+    }
+   
+   public int size(){
+       return count;
+   }
     
 }

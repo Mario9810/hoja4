@@ -9,6 +9,15 @@ package javaapplication8;
  *
  * @author ledod
  */
-public class NodoSimple {
+public class NodoSimple<E> {
+    private E valor;
+    private int objetoSiguiente;
+    public NodoSimple(E valor, int siguiente){
+        this.valor=valor;
+        objetoSiguiente=siguiente;
+    }
+    public E getValor(){
+        return (E)valor;
+    }
     
 }

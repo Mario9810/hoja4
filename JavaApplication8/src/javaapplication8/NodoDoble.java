@@ -9,6 +9,14 @@ package javaapplication8;
  *
  * @author ledod
  */
-public class NodoDoble {
-    
+public class NodoDoble<E> {
+    private E valor;
+    private int objetoSiguiente;
+    public NodoDoble(E valor, int siguiente){
+        this.valor=valor;
+        objetoSiguiente=siguiente;
+    }
+    public E getValor(){
+        return valor;
+    }
 }

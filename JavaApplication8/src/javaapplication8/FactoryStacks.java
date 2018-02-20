@@ -11,4 +11,18 @@ package javaapplication8;
  */
 public class FactoryStacks {
     
+    public static Stack GetStack(int tipoStack,int claseLista){
+        if (tipoStack==1)
+            return new StackArrayList();
+        else if (tipoStack==2)
+            return new StackVector();
+        else{
+            if (claseLista==1)
+                return new ListaSimple();
+            else if (claseLista==2)
+                return new ListaDoble();
+            else
+                return new ListaCircular();
+        }
+    }
 }
